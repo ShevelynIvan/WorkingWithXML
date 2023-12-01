@@ -31,7 +31,7 @@ namespace WorkingWithXML
             SetNewCarPriceByNumber("VV1234", 777);
         }
 
-        private static void SaveCollectionInXmlFile(List<Car> cars)
+        private static void SaveCollectionInXmlFile(IEnumerable<Car> cars)
         {
             var document = new XDocument();
             var rootElement = new XElement("listOfCars");
